@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File and Data : Project 1(Individual)</title>
+</head>
+<body>
+
+<h2>User Information Form</h2>
+<form action="updateInfo.php" method="POST">
+    <table>
+        <!-- Row for First Name -->
+        <tr>
+            <td><label for="firstName">First Name:</label></td>
+            <td><input type="text" id="firstName" name="firstName" maxlength="20" required></td>
+        </tr>
+
+        <!-- Row for Last Name -->
+        <tr>
+            <td><label for="lastName">Last Name:</label></td>
+            <td><input type="text" id="lastName" name="lastName" maxlength="20" required></td>
+        </tr>
+
+        <!-- Row for Phone Number -->
+        <tr>
+            <td><label for="phone">Phone Number:</label></td>
+            <td><input type="text" id="phone" name="phone" maxlength="12" placeholder="xxx-xxx-xxxx" required></td>
+        </tr>
+
+        <!-- Row for Email Address -->
+        <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" id="email" name="email" maxlength="30" required></td>
+        </tr>
+
+        <!-- Row for Submit and Reset buttons -->
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>

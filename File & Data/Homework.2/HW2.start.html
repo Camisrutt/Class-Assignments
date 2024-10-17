@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Data Creation</title>
+    <style>
+        body {
+            background-color: #2c2f33; /* Dark background */
+            color: #ffffff; /* Light text */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 100px;
+        }
+
+        button {
+            background-color: #00BFFF; /* Bright light blue color */
+            color: #ffffff;
+            font-size: 1.5em; /* Enlarge button text */
+            padding: 15px 50px; /* Wider padding for a rigid rectangle */
+            border: 3px solid #060707;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            border-radius: 0; /* Remove border-radius for a rigid shape */
+        }
+
+        button:hover {
+            background-color: #1E90FF; /* Slightly darker blue on hover */
+        }
+
+        form {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <form action="create_data.php" method="post">
+        <button type="submit">Create Data</button>
+    </form>
+</body>
+</html>

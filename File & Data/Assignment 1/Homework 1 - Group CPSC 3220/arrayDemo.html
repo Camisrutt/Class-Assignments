@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- Defines the document type as HTML5 for modern standards and browser compatibility -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Sets the character encoding to UTF-8, which supports most languages and characters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures the page is responsive by adjusting the width to the device's screen size -->
+    <title>Array Demo</title>
+    <!-- The title of the webpage displayed in the browser tab -->
+</head>
+<body>
+    <h1>Array Demo</h1>
+    <!-- Main heading for the page -->
+
+    <form action="arraydemo.php" method="POST">
+        <!-- The form sends data to 'processArray.php' using the POST method -->
+
+        <!-- Input for number of rows in the array -->
+        <label for="rows">Number of Rows:</label>
+        <input type="number" id="rows" name="rows" min="1" required>
+        <!-- 'min="1"' ensures the number of rows is at least 1 -->
+        <br><br>
+
+        <!-- Input for number of columns in the array -->
+        <label for="columns">Number of Columns:</label>
+        <input type="number" id="columns" name="columns" min="1" required>
+        <br><br>
+
+        <!-- Input for the minimum random value in the array -->
+        <label for="min">Min Random Value:</label>
+        <input type="number" id="min" name="min" required>
+        <br><br>
+
+        <!-- Input for the maximum random value in the array -->
+        <label for="max">Max Random Value:</label>
+        <input type="number" id="max" name="max" required>
+        <br><br>
+
+        <!-- Reset button to clear all the form inputs -->
+        <button type="reset">Reset</button>
+
+        <!-- Submit button to send the form data to 'processArray.php' -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
